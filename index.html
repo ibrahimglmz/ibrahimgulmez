@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İbrahim Gülmez</title>
+    <meta  name="description" content="İbrahim,Gülmez,web,sayfası,kişisel,amatör web sayfası,ilk proje,html5,html,css,css3">
+    <meta name="keywords" content="İbrahim,Gülmez,web,sayfası,kişisel,amatör web sayfası,ilk proje,html5,html,css,css3">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="Free_Sample_By_Wix.jpg" type="image/x-icon">
+    <style>
+    *{
+    box-sizing: border-box;
+    padding: px;
+    margin: 0px;
+
+}
+/*  kutu genıslıklerı*/
+.col-1{
+    width: 8.33%;
+
+}
+.col-2{
+    width: 16.66%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width:33.33%;
+}
+.col-5{
+    width:41.66%;
+}
+
+.col-6{
+    width:50%;
+}
+.col-7{
+    width:58.33%;
+}
+.col-8{
+    width:66.66%;
+}
+.col-9{
+    width:75%;
+}
+.col-10{
+    width:83.33%;
+}
+.col-11{
+    width:91.66%;
+}
+
+.col-12{
+    width:100%;
+}
+
+/*   satırlar */
+.row{
+    border:darkred  none ;
+    background-color:darkcyan;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/*  SATIRLARIN BIRBIEINE DEGMEMIS ICIN YAZILAN KOD*/
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+
+}
+/*  tepkisel resim */
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+/*  col-yaslama kodu */
+[class*="col-"]{
+    float: left;
+    padding: 5px;
+    
+    background-color:cadetblue;
+    border-radius: 10px;
+
+
+}
+/*  500pxleden daha kucuk resımler ıcın */
+ @madia screen and (max-width::500px){
+    [class*="col-" ]{width: 100%px;}
+ }
+ /*  KUTU YUKSEKLIKLERI*/
+ #ust{
+    min-height: 80px;
+
+ }
+ #menu{
+    min-height: 30px;
+    
+   
+ }
+ #orta{
+    min-height: 400px;
+
+ }
+ #alt{
+   min-height: 60px;
+
+ }
+ /*  SOSYAL MEDYA ICONLARI*/
+ #icon{
+    width:50px ;
+    float: right;
+    margin-right: 10px;
+    
+ }
+ #icon:hover{
+    
+ }
+ 
+ /*  Ana menu ıcın kod*/
+ #menu #anamenu ul{
+    list-style-type:none ;
+
+
+ }
+ #menu #anamenu ul li{
+    border: 4px solid ;
+    border-color:cadetblue;
+    width: 25%;
+    float: left;
+    margin-right: 10px;
+    border-radius: 100px;
+    background-color:azure;
+    text-align: center;
+    
+ }
+ @media  screen and (max-width:500px) {
+    
+      #menu #anamenu ul li {width: 100%;};
+    
+ }
+/*  ana menu lınklerı*/
+
+#menu #anamenu a{
+    color:black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:lighter;
+    padding: 5px;
+    text-decoration: none;
+} 
+#menu #anamenu a:hover{
+    color: red;
+
+}
+#menu #anamenu a:active, a:visited{
+    color: blueviolet;
+}
+p{
+    color:whitesmoke;
+    text-align: center;
+    
+}
+#mavitık{
+    
+    text-align:center;
+    width: 10px;
+    
+}
+#telifhakkı {
+    padding: 30px;
+
+}
+#sertifikalarım #li{
+    text-align: center;
+    padding: 30px;
+    color:whitesmoke;
+}
+#yanmenuh1{
+    text-align: center;
+    color: brown;
+    padding: 10px;
+}
+
+li{
+    color:whitesmoke;
+}
+#alt #altmenu p{
+    text-align: center;
+    padding: 5px;
+    color: red;
+    
+    
+}
+
+    
+
+#dolarkuru{
+   max-width: 1050px;
+   min-height: 250px;
+   padding: 0px 10px 0px 10px ;
+   margin: 10px;
+   opacity: 1;
+   float: right;
+   background-color: darkcyan;
+   
+
+}
+.bulut{
+    max-width: 1050px;
+    max-height: 250px;
+    padding: 0px 10px 0px 10px ;
+    margin: 10px;
+    opacity: 1;
+    float:right;
+    border: 5px solid darkcyan;
+ 
+ 
+}
+
+    </style>
+
+</head>
+<body>
+    <header id="ust" class="row">
+        <div id="foto" class="col-3">
+         <a id="ibay" href="index.html"><img src="facebook_profile_image.png"> </a>
+       
+
+        </div>
+        <div id="sosyal" class="col-9">
+            <div id="icon">
+                <a href="https://www.instagram.com/ibrahim_glmzz/"><img src="instagram.png"></a>
+            
+            </div>
+            <div id="icon">
+                <a href="https://twitter.com/ibrahim_glmzz"><img src="twitter.png"></a>
+                
+            </div>
+            <div id="icon">
+                <a href="https://www.linkedin.com/in/ibrahim-gülmez-8bb9501b1?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B2dZUENbaR2yvBAe3W%2BZmBg%3D%3D"><img src="linkedin.png"></a>
+            </div>
+            <div id="icon">
+                <a href="https://github.com/ibrahimglmz"><img src="github.png"></a>
+               
+
+
+            </div>
+            
+        
+        </div>
+        <div id="ww_a7edaed56d583" class="bulut" v='1.3' loc='id' a='{"t":"horizontal","lang":"tr","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'><a href="https://weatherwidget.org/tr/" id="ww_a7edaed56d583_u" target="_blank">Widget hava durumu ekleme</a></div><script async src="https://app1.weatherwidget.org/js/?id=ww_a7edaed56d583"></script>       
+    </header>
+    <nav id="menu" class="row">
+        <div id="anamenu" class="col-12">
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="index.html">Hakkımda</a></li>
+                <li><a href="index.html">İletişim</a></li>
+                
+            </ul>
+        </div>
+       
+￼
+
+
+
+
+    </nav>
+    <div id="orta" class="row">
+        <section id="icerik" class="col-8">
+         <p id="kendini tanıt">
+            İbrahim Gülmez,Web siteleri ve mobil uygulama Geliştirme alanlarında kendini sürekli geliştiren bir yazılımcıdır.Sürekli araştırma yaparak kendini güncel tutmaya çalışan ve trendleri takip eden ve projelerinde bilgisinin tümünü kullanarak müşterilerini memnuniyetini en üst düzeyde tutar.
+            <br>
+            <br>
+            
+             Aktif olarak İstanbul Kent Üniversitesi Google Developer Student Clubs Core Team'inde görev almaktayım.
+             <br>
+             Web tasarım olanında bir kac proje geliştirdikten sonra tamamen farklı bir alan olan mobil uygulama  geliştirme/programlamaya yönelecegim.Bu şekilde yazılım alanına Web tasarım kodlama dilleri ile giriş yapıp profosyonelliğe ve mesleki acıdan mobil uygulama dili olan Switch dilini ögreneceğim 
+             <br>
+             <br>
+             <br>
+             
+            Switch ve Objective-C Sertifikalarımı aldıktan sonra cok kısa bir süre sonra  burada geliştirdiğim projeler yer alacaktır.
+
+
+         </p>
+        </section>
+        <aside id="yanmenu" class="col-4">
+            <h1 id="yanmenuh1">
+                Sertifikalarım
+            </h1>
+            <p id="sertifikalarım">
+                
+
+                
+                <li id="beyaz renk">Türkcell Akademisi Geleçegin Yazanları: HTML5 Web Tasarlama</li>
+                <br>
+                <li id="beyaz renk">Türkcell Akademisi Geleçegin Yazanları: CSS3 Web Tasarlama</li>
+                <br>
+                <li id="beyaz renk">Bilgi Teknolojileri ve İletişim Kurumu: HTML5 İle Web Tasarlama</li>
+                <br>
+                <li id="beyaz renk">Bilgi Teknolojileri ve İletişim Kurumu: CSS3 ile Web Tasarlama</li>
+                <br>
+                <li id="beyaz renk">Bilgi Teknolojileri ve İletişim Kurumu: Unity İle Dijital Oyun Geliştirmeye Giriş</li>
+        
+
+            </p>
+
+
+        </aside>
+
+    </div>
+    <footer id="alt" class="row">
+        <div id="altmenu" class="col-12"></div>
+        <p >
+            <a href="index.html">Anasayfa</a> |
+            <a href="index.html">Hakkımda</a> |
+            <a href="index.html">İletişim</a>
+        </p>
+       
+            
+       
+
+        <p id="telifhakkı"> Telif Hakkı  iBAY © 2023  - Tüm Hakları Saklıdır. <img id="mavitık" src="correct.png" title="onaylı site"></p>
+
+    </footer>
+    
+</body>
+</html>
+
+
